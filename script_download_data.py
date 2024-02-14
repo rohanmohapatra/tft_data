@@ -99,8 +99,10 @@ def download_and_unzip(url, zip_path, csv_path, data_folder):
 def download_volatility(config):
   """Downloads volatility data from OMI website."""
 
-  url = 'http://realized.oxford-man.ox.ac.uk/images/oxfordmanrealizedvolatilityindices.zip'
-
+  # Dead link
+  # url = 'http://realized.oxford-man.ox.ac.uk/images/oxfordmanrealizedvolatilityindices.zip'
+  url = "https://github.com/onnokleen/mfGARCH/raw/v0.1.9/data-raw/OxfordManRealizedVolatilityIndices.zip"
+  
   data_folder = config.data_folder
   csv_path = os.path.join(data_folder, 'oxfordmanrealizedvolatilityindices.csv')
   zip_path = os.path.join(data_folder, 'oxfordmanrealizedvolatilityindices.zip')
